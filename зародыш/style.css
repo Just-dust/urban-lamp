@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+    list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.menu {
+    height: 80px;
+    width: 100%;
+    background-color: #232536;
+}
+
+.menu ul {
+    float: right;
+    padding-top: 12px;
+    padding-right: 80px;
+}
+
+.menu li {
+    display: inline;
+    padding-right: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menu button {
+    background-color: white;
+    width: 179px;
+}
+
+.slider {
+    height: 720px;
+    background-image: url(img/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-content {
+    padding-top: 128px;
+    padding-left: 81px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.slider-content p,
+h1,
+button {
+    padding-bottom: 24px;
+}
+
+
+.slider-content p:first-child {
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.slider-content p:nth-child(2) {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.author {
+    color: #FFD050;
+}
+
+button {
+    padding-top: 16px;
+    background-color: #FFD050;
+    border: none;
+    font-weight: 700;
+    width: 204px;
+    height: 56px;
+    color: #232536;
+    font-size: 18px;
+}
+
+.slides {
+    position: absolute;
+    padding-top: 160px;
+    right: 50%;
+}
+
+.slides li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+.active-slide {
+    background-color: white;
+}
+
+.content {
+    margin-top: 128px;
+    margin: 80px 80px;
+}
+
+.content div {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+
+.featured {
+    float: left;
+}
+
+.featured-content {
+    width: 700px;
+    padding: 32px 0 32px 32px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.post-author {
+    color: #592EA9;
+}
+
+.featured-content img {
+    padding-bottom: 32px;
+}
+
+.featured-content p {
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.featured-content p:nth-child(3) {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.posts {
+    width: 450px;
+    margin-left: 80px;
+}
+
+.posts a {
+    text-decoration: none;
+    color: #592EA9;
+}
+
+.posts ul {
+    list-style-type: none;
+}
+
+.posts-content {
+    color: black;
+    padding-bottom: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 350px;
+}
+
+.active-post {
+    background: #FBF6EA;
+}
+
+.posts li {
+    padding: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: #232536;
+}
+
+.footer-content {
+    width: 90%;
+    min-height: 256px;
+    height: auto;
+    background-color: #2e3149;
+    margin-bottom: 80px;
+    margin-left: 5%;
+}
+
+.footer-content p {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+    float: left;
+    padding-left: 64px;
+    padding-top: 80px;
+    padding-right: 30px;
+}
+
+.footer-form {
+    padding-top: 84px;
+    float: right;
+    margin-right: 80px;
+}
+
+.footer-form input:first-child {
+    width: 323px;
+    height: 56px;
+    border: 1px solid #4C4C4C;
+    background-color: #2e3149;
+    margin-right: 24px;
+}
+
+.footer-form input::placeholder {
+    color: #6D6E76;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-form input:last-child {
+    width: 179px;
+    height: 56px;
+    background-color: #FFD050;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-menu {
+    height: 80px;
+    width: 100%;
+    background-color: #232536;
+}
+
+.footer-menu ul {
+    float: right;
+    padding-top: 12px;
+    padding-right: 80px;
+}
+
+.footer-menu li {
+    display: inline;
+    padding-right: 15px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width: 650px) {
+    .slider {
+        height: 520px;
+    }
+
+    .menu {
+        height: 120px;
+    }
+
+    .menu ul {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .menu button {
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .slider-content {
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    .slider-content p:first-child {
+        text-transform: uppercase;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    
+    .slider-content p:nth-child(2) {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .content {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .featured {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-content {
+        width: 100%;
+        padding: 16px;
+        border: 1px solid rgb(219, 219, 219);
+    }
+
+    .featured-content img {
+        width: 100%;
+    }
+
+    .posts {
+        margin-top: 40px;
+        margin-left: 0;
+        width: 90%;
+        height: auto;
+    }
+
+    .active-post {
+        background: none;
+    }
+
+    .footer {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .footer-content p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+        color: #FFFFFF;
+        float: left;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .footer-content {
+        width: 350px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .footer-menu {
+        height: 50px;
+      
+  
+    }
+    .footer-menu ul{
+     padding-right: 0;
+    }
+
+    .footer-form {
+        margin: 0;
+        padding-top: 40px;
+        padding-right: 60px;
+    }
+    
+    .footer-form input:first-child {
+        width: 170px;
+        height: 40px;
+        margin-right: 24px;
+    }
+    
+    .footer-form input::placeholder {
+        color: #6D6E76;
+        font-weight: 400;
+        font-size: 10px;
+    }
+    
+    .footer-form input:last-child {
+        width: 70px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 30px;
+    }
+
+    .featured {
+        width: 95%;
+    }
+    
+    .featured-content {
+        width: 100%;
+    }
+    
+    .featured-content img {
+        padding-bottom: 32px;
+        width: 100%;
+    }
+    
+    .featured-content p {
+        padding-bottom: 16px;
+        width: 100%;
+    }
+
+    .footer-content p {
+        padding: 30px;
+    }
+
+    .footer-form {
+        padding-top: 0;
+    }
+}
